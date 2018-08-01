@@ -3,7 +3,7 @@ import { View, Text, StyleSheet } from 'react-native';
 
 const listItem = (props) => {
   return (
-    <View style={styles.listItem}>
+    <View style={styles.listItem} onPress={props.onItemPressed}>
       <Text>{props.placeName}</Text>
     </View>
   )
