@@ -1,7 +1,8 @@
 import React from 'react';
-import { View, Text, StyleSheet, TouchableWithoutFeedback } from 'react-native';
+import { View, Text, StyleSheet, TouchableWithoutFeedback, Image } from 'react-native';
 
 const listItem = (props) => {
+  console.log(props);
   return (
     <TouchableWithoutFeedback onPress={props.onItemPressed}>
       <View style={styles.listItem} >
@@ -23,7 +24,7 @@ const styles = StyleSheet.create({
   },
   placeImage: {
     marginRight: 8,
-    maximumHeight: 30,
+    maxHeight: 30,
     width: 30
   }
 });
