@@ -4,9 +4,9 @@ import { TextInput } from 'react-native';
 const defaultInput = props => {
   return (
     <TextInput
-      style={styles.input} 
-      underlineColorAndroid="transparent"
-      {...props} />
+      {...props}
+      style={[styles.input, props.style]} 
+      underlineColorAndroid="transparent" />
   )
 }
 
