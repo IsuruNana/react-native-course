@@ -1,3 +1,4 @@
 export {
   addPlace, deselectPlace
-} from './places'
+} from './places';
+export { tryAuth } from './auth';
