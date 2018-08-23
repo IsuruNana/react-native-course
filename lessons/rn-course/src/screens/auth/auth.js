@@ -27,7 +27,7 @@ import { tryAuth } from '../../store/actions/index';
 
 class AuthScreen extends Component {
     state = {
-      viewMode: Dimensions.get('height').height > 500 ? "portrait" : "landscape",
+      viewMode: Dimensions.get('window').height > 500 ? "portrait" : "landscape",
       authMode: 'login',
       controls: {
         email : {
@@ -201,13 +201,14 @@ class AuthScreen extends Component {
               </View>
             </TouchableWithoutFeedback>
             <ButtonWithBackground 
-            color="#29aaf4" 
-            onPress={this.loginHandler}
-            disabled={
-              (!this.state.controls.email.valid && this.state.authMode === 'signup') ||
-              !this.state.controls.password.valid ||
-              !this.state.controls.confirmPassword.valid
-            }>
+              color="#29aaf4" 
+              onPress={this.loginHandler}
+              // disabled={
+              //   (!this.state.controls.email.valid && this.state.authMode === 'signup') ||
+              //   !this.state.controls.password.valid ||
+              //   !this.state.controls.confirmPassword.valid
+              // }
+            >
               Submit
             </ButtonWithBackground>
         </KeyboardAvoidingView>

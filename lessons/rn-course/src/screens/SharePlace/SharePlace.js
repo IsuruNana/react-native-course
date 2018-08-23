@@ -3,7 +3,7 @@ import { View, Text, TextInput, Button, StyleSheet, ScrollView, Image } from 're
 import { connect } from 'react-redux';
 
 import { addPlace } from '../../store/actions/index';
-import PlaceInput from '../../components/UI/PlaceInput/PlaceInput';
+import PlaceInput from '../../components/PlaceInput/PlaceInput';
 import MainText from '../../components/UI/MainText/MainText';
 import HeadingText from '../../components/UI/HeadingText/HeadingText';
 import PickImage from '../../components/PickImage/PickImage';
